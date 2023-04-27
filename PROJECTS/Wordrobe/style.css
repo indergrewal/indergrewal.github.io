@@ -1,0 +1,240 @@
+body{
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 40px 20px 420px 20px 1fr;
+    row-gap: 40px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+body.sos{
+    grid-template-rows: 640px 20px 420px 20px 1fr;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.header, .msg{
+    margin-top: 5px;
+    height: 54px;
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 0.5s;
+}
+.header.sos{
+    height: 640px;
+}
+
+.iHead{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+.iSubHead{
+    margin-top: 5px;
+
+    font-family: 'Nanum Myeongjo';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+}
+.iList{
+    padding: 0px 0px 0px 25px;
+    font-family: 'Nanum Myeongjo';
+    font-family: 'Marcellus';
+    font-size: 20px;
+    text-align: justify;
+
+}
+.iExamples{
+    padding-top: 5px;
+    text-align: left;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 4fr;
+    column-gap: 2px;
+    align-items: center;
+    align-content: center;
+    justify-content:left;
+    justify-items:left;
+
+}
+.iBoxes{
+    border: 1.5px solid rgb(0 0 0);
+    height: 40px;
+    width: 40px;
+    border-radius: 1px;
+    font-size: 25px;
+    font-family: 'Kanit', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+    align-content: center;
+}
+#iY{
+    border: 2px solid #6aaa64;
+    background-color: #6aaa64;
+    color: white;
+}
+#iM{
+    border: 2px solid #c9b458;
+    background-color: #c9b458;
+    color: white;
+}
+#iN{
+    border: 2px solid rgb(130, 130, 130);
+    background-color: rgb(130, 130, 130);
+    color: white;
+}
+.iEFooter{
+    font-family: 'Marcellus';
+    text-align: left;
+    font-size: 20px;
+
+}
+#G{
+    font-family: 'Kanit', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+
+}
+.iUnderstood{
+    display: grid;
+    justify-content: center;
+}
+.iButton{
+    margin-top: 50px;
+    width: 100px;
+    padding: 5px;
+    font-family: 'Kanit' ;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align:middle;
+    border: 2px solid rgb(130, 130, 130);
+    transition: 0.25s ease-in;
+}
+.iButton:hover{
+    color: white;
+    background-color: rgb(130, 130, 130);
+}
+.msg{
+    margin-top: 20px;
+    height: 20px;
+
+}
+.footer{
+    margin-top: 20px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.title{
+    margin:0px;
+    border-bottom: 1px solid black;
+    border-top:1px solid black ;
+    height: 100%;
+    /* padding: 5px; */
+    font-family: 'Abril Fatface' ;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align:middle;
+    transition: 0.5s;
+}
+.title.sos{
+    height: 640px;
+    /* box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.75); */
+
+}
+.instructions{
+    display: none;
+}
+.instructions.sos{
+    display: grid;
+}
+.op{
+    opacity: 0;
+    transition: 0.5s;
+}
+.op.sos{
+    opacity: 1;
+}
+.msgtxt{
+    padding: 5px;
+    font-family: 'Kanit' , sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align:middle;
+    background-color:  rgb(0, 0, 0);
+    color : white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.msgtxt.error{
+    opacity: 1;
+
+
+}
+.replay, .help{
+    padding: 5px;
+    font-family: 'Kanit' ;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align:middle;
+    border: 2px solid rgb(130, 130, 130);
+    transition: 0.25s ease-in;
+
+}
+.help{
+    margin-top: -15px;
+}
+.replay:hover , .help:hover{
+background-color:  rgb(130, 130, 130);
+color: white;
+cursor:pointer;
+}
+.gameArea{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.boxes{
+    border: 2px solid rgb(130, 130, 130);
+    height: 60px ;
+    width: 60px;
+    border-radius: 1px;
+    font-size: 40px;
+    font-family: 'Kanit', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+    align-content: center;
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+.boxes.turn{
+transform: rotateX(90deg);
+}

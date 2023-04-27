@@ -2,13 +2,56 @@ const elements = document.querySelectorAll('.bounce');
 const sideButtons =Array.from(document.querySelectorAll('.sideButton'));
 const sideLinks = Array.from(document.querySelectorAll('.sideLink'));
 const home = document.querySelector('.homeButton');
+const pros = Array.from(document.querySelectorAll('.projectElement'));
+
 console.log("Number of sideButtons: " + sideButtons.length);
 
+
+// buttons //
 
 home.addEventListener('click', function() {
   window.location.href = 'index.html';
 });
 
+pros.forEach(button=>{
+  button.addEventListener('click', ()=>{
+    loadProject(pros.indexOf(button))});
+});
+
+function loadProject(p) {
+  switch (p) {
+    case 0:
+      window.open('PROJECTS/marvelous/home.html') ;
+      break;
+    case 1:
+      window.open('PROJECTS/Wordrobe/Index.html') ;
+      break;
+    case 2:
+      window.location.href = 'PROJECTS/p2/p2.html';
+      break;
+    case 3:
+      window.location.href = 'PROJECTS/p3/p3.html';
+      break;
+    case 4:
+      window.location.href = 'PROJECTS/p4/p4.html';
+      break;
+    case 5:
+      window.location.href = 'PROJECTS/p5/p5.html';
+      break;
+    case 6:
+      window.location.href = 'PROJECTS/p6/p6.html';
+      break;
+    case 7:
+      window.location.href = 'PROJECTS/p7/p7.html';
+      break;
+    case 8:
+      window.location.href = 'PROJECTS/p8/p8.html';
+      break;
+
+
+}
+}
+// --buttons--//
 elements.forEach(element => {
   element.addEventListener('mouseenter', () => {
 
@@ -21,6 +64,11 @@ sideButtons.forEach(button=>{
 });
 
 
+for(var sl=1; sl<sideLinks.length;sl++)
+{
+  console.log("sl " + sl+" and "+sideLinks.length);
+sideLinks[sl].style.display='none';
+}
 function menuToggle(b)
 {
   sideLinks.forEach(sideLink=>{

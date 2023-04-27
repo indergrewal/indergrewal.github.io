@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordhome</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:wght@400;500;600;800&family=Marcellus&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="header">
+        <div></div>
+        <div class="title">WORDROBE  <div class="instructions">
+            <div class="iHead op">How To Play</div>
+            <div class="iSubHead op">Guess the word in 6 tries</div>
+            <ul class="iList op">
+                <li>Each guess must be a valid 5-letter word</li>
+                <li>The color of the tiles will change to show how close your guess was to the word.</li>
+            </ul>
+            <div class="iHead op" id="2">Examples</div>
+
+            <div class="iExamples op">
+                <div class="iBoxes op" id="iY">G</div>
+                <div class="iBoxes op">A</div>
+                <div class="iBoxes op">M</div>
+                <div class="iBoxes op">E</div>
+                <div class="iBoxes op">S</div>
+                <div></div>
+            </div>
+            <div class="iEFooter op"><span id="G">G</span> is in the word and in the correct slot</div>
+
+            <div class="iExamples op">
+                <div class="iBoxes op" >H</div>
+                <div class="iBoxes op">O</div>
+                <div class="iBoxes op" id="iM">N</div>
+                <div class="iBoxes op">E</div>
+                <div class="iBoxes op">Y</div>
+                <div></div>
+            </div>
+            <div class="iEFooter op"><span id="G">N</span> is in the word but in the wrong slot</div>
+
+            <div class="iExamples op">
+                <div class="iBoxes op" >C</div>
+                <div class="iBoxes op" id="iN">L</div>
+                <div class="iBoxes op">A</div>
+                <div class="iBoxes op">S</div>
+                <div class="iBoxes op">S</div>
+                <div></div>
+            </div>
+            <div class="iEFooter op"><span id="G">L</span> is not in the word in any slot</div>
+            <div class="iUnderstood op">
+                <div class="iButton op">Understood</div></div>
+        </div>
+        </div>
+        <div></div>
+    </div>
+    <div class="msg">
+        <div></div>
+        <div class="msgtxt"></div>
+        <div></div>
+    </div>
+    <div class="gameArea">
+        <div class="left"></div>
+            <div class="container">
+            <div class="boxes" id="11"></div>
+            <div class="boxes" id="12"></div>
+            <div class="boxes" id="13"></div>
+            <div class="boxes" id="14"></div>
+            <div class="boxes" id="15"></div>
+            <div class="boxes" id="21"></div>
+            <div class="boxes" id="22"></div>
+            <div class="boxes" id="23"></div>
+            <div class="boxes" id="24"></div>
+            <div class="boxes" id="25"></div>
+            <div class="boxes" id="31"></div>
+            <div class="boxes" id="32"></div>
+            <div class="boxes" id="33"></div>
+            <div class="boxes" id="34"></div>
+            <div class="boxes" id="35"></div>
+            <div class="boxes" id="41"></div>
+            <div class="boxes" id="42"></div>
+            <div class="boxes" id="43"></div>
+            <div class="boxes" id="44"></div>
+            <div class="boxes" id="45"></div>
+            <div class="boxes" id="51"></div>
+            <div class="boxes" id="52"></div>
+            <div class="boxes" id="53"></div>
+            <div class="boxes" id="54"></div>
+            <div class="boxes" id="55"></div>
+            <div class="boxes" id="61"></div>
+            <div class="boxes" id="62"></div>
+            <div class="boxes" id="63"></div>
+            <div class="boxes" id="64"></div>
+            <div class="boxes" id="65"></div>
+            </div>
+        <div class="right"></div>
+    </div>
+
+    <div class="footer">
+        <div class="b-left"></div>
+        <div class="replay">Play Again</div>
+        <div class="b-right"></div>
+    </div>
+    <div class="footer">
+        <div class="b-left"></div>
+        <div class="help">How To Play</div>
+        <div class="b-right"></div>
+    </div>
+    <script src="wordGame.js"></script>
+    <script src="help.js"></script>
+</body>
+</html>

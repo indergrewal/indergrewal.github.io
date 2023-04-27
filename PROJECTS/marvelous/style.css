@@ -1,0 +1,157 @@
+.collection{
+display: grid;
+
+grid-auto-flow: column;
+position: relative;
+}
+body{
+    padding: 0px;
+    margin:0px;
+    overflow: hidden;
+    background-color:rgb(255, 255, 186);
+}
+.left, .right{
+    background-color: rgb(0, 0, 0);
+    height: max-content;
+    width: 50%;
+
+    z-index: 100;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    transition: ease-in-out 0.5s;
+}
+
+.left.after, .right.after{
+
+    width: 310px;
+    box-shadow: 0px 0px 15px 5px rgb(255, 74, 14);
+
+}
+.play{
+    color: white;
+    align-self: center;
+    position: absolute;
+    z-index: 200;
+    top:700px;
+    left: 43%;
+}
+.score{
+     color: red;
+    align-self: center;
+    position: absolute;
+    z-index: 200;
+    top: 770px;
+    left: 43%;
+    font-size: 40px;
+    font-family: Righteous;
+    display: inline-block;
+    height: 70px;
+    opacity:0;
+}
+.moves{
+    position: absolute;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    top: 748px;
+    left: 805px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 18px;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 40px;
+}
+.play.after{
+    opacity: 0;
+
+}
+.score.after{
+    opacity: 100;
+}
+.left{
+    left:0;
+}
+.right{
+right: 0;;
+}
+
+.left img{
+
+    object-fit: fill;
+    height: 100vh;
+    display: block;
+    float: right;
+
+
+}
+.right img{
+ object-fit: fill;
+ height: 100vh;
+ display: block;
+    float: left;
+}
+.container{
+    width: 100%;
+    height: max-content;
+    background-color:rgb(255, 255, 186);
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, max-content));
+    column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    justify-content:center;
+    justify-self: center;
+    padding-top: 35px;
+    padding-bottom: 100px;
+
+}
+.card{
+    position: relative;
+    height: 26vh;
+    width: 14.625vh;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.face img{
+    box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+    height: 26vh;
+    border-radius: 2px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.back, .face{
+    position: absolute;
+    top: 0px;
+    height: 26vh;
+    width: 14.625vh;
+
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.back img{
+    height: 26vh;
+    border-radius: 2px;
+
+
+}
+.card.flip .back{
+    transform: rotateY(0deg);
+}
+.card.flip .face{
+    transform: rotateY(180deg);
+}
+.card.bw .face img{
+    filter: grayscale(100%);
+}
