@@ -20,7 +20,9 @@
       window.addEventListener('keyup', function(event) {
         if (event.key === 'Escape') {
          console.log("Closing...........");
-          window.close();
+         window.location.href= 'home.html' ;
+
+          // window.close();
          }
        });
   //**************FULL SCREEN****************************

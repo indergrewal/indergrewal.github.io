@@ -1,0 +1,174 @@
+body{
+    overflow: hidden;
+    position: relative;
+
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.container{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 98vh;
+    width: 98.5vw;
+    background-image: url('forest.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.topHalf{
+display: grid;
+align-items: start;
+justify-content: center;
+}
+.keyMap{
+    margin-top: 10px;
+    height: 234px;
+    width:max-content;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+.row{
+    height: 75px;
+    width: 825px;
+   display: flex;
+   flex-direction: row;
+    column-gap: 10px;
+    align-content: center;
+    justify-content: center;
+}
+.keyElement{
+
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.725) ;
+    border: 2px solid rgba(255, 255, 255, 0.725) ;
+    border-radius: 4px;
+}
+.keyBox{
+    position: relative;
+    color: black;
+}
+.enemy{
+    top: -117px;
+    left: -37.5px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    opacity: 0;
+    transition: .2s;
+}
+
+.opShow
+{
+opacity: 1;
+}
+.bottomHalf{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.playerContainer{
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: -15px;
+    background-image: url('base2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.player{
+    width: 50px;
+    height: 100px;
+    margin-bottom: -20px;
+    background-image: url('tank.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 100;
+    position: relative;
+    display: none;
+}
+
+.bullet{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    background-color: aqua;
+    z-index: 199;
+    top:720px;
+    left:753px;
+    display: none;
+
+}
+.score{
+    font-family: 'Abril Fatface';
+    font-size: 2rem;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   color:rgba(255, 255, 255, 0.725) ;
+}
+.scoreText{
+    color: rgb(255, 0, 132);
+    font-size: 2.1rem;
+}
+.health{
+    font-family: 'Abril Fatface';
+    font-size: 2rem;
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   color:rgba(255, 255, 255, 0.725) ;
+}
+.healthText{
+    color: rgb(255, 0, 132);
+    font-size: 2.1rem;
+}
+.howTo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color:aquamarine; */
+    font-family: 'Sigmar' , sans-serif;
+    font-size: 1.5rem;
+   position: absolute;
+   top: 270px;
+   left: 31.5vw;
+   height: 300px;
+   width: 550px;
+   color: #302625;
+}
+.header{
+    border-bottom: 2px solid #302625;
+}
+.description{
+    font-family: 'Marcellus', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.item{
+    margin:10px;
+}
+.enterToPlay{
+    border-bottom: 2px solid #302625;
+}
+.hide{
+    opacity: 1;
+    transition: .2s;
+}
+.hide.opHide{
+    opacity: 0;
+}
+.description.opHide{
+    opacity: 0;
+}

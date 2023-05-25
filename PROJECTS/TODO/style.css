@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task::-webkit-scrollbar {
+    display: none;
+}
+.entire{
+    background-color: #ef3d59;
+    box-shadow: 1px 1px 15px black;
+    border-radius: 3px;
+    position: fixed;
+    top:10px;
+    bottom:10px;
+    object-position: 50%;
+    width: 480px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.header{
+    padding-top: 23px;
+    margin-left: -265px;
+    color: #ffffff;
+    font-family:  ubuntu, arial ;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.container{
+    background-color: #344e5c;
+    border-radius: 0px 0px 3px 3px ;
+    position: fixed;
+    top:80px;
+    bottom:10px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding-top: 20px;
+}
+.item{
+    margin-top: 20px;
+    height: 40px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+}
+.task{
+    background-color: #4ab19d;
+    border-radius: 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+    white-space: nowrap;
+    overflow:scroll;
+    text-overflow: ellipsis;
+
+
+}
+.details{
+    color: #ffffff;
+    font-family:  ubuntu,arial;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.delete{
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
+
+
+}
+.cross{
+
+    height: 40px;
+    width: 40px;
+    padding-right: 13px;
+    background-color: #4ab19d;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: oleo script, ubuntu,arial;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.cross:hover{
+    background-color:#ef3d59;
+    color: #ffffff;
+}
+.new-holder{
+    flex:1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: center;
+}
+.new-item{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+}
+.new-task{
+    background-color: #ffffff;
+    border:none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+    overflow: hidden;
+    outline: none;
+    color: #4a4a4a;
+    font-family: ubuntu,arial;
+    font-weight: 500;
+    font-size: 20px;
+
+
+}
+.add{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
+}
+.tick{
+    height: 40px;
+    width: 40px;
+    padding-right: 13px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: #4a4a4a;
+    font-family: ubuntu,arial;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.tick:hover{
+    background-color: #4ab19d;
+    color:#ffffff;
+}
+.new-task::placeholder{
+    border: none;
+    color: #4a4a4a;
+}
