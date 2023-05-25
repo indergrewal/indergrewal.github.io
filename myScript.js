@@ -21,16 +21,16 @@ pros.forEach(button=>{
 function loadProject(p) {
   switch (p) {
     case 0:
-      window.open('PROJECTS/Wordrobe/Index.html') ;
+      window.open('PROJECTS/Wordrobe/home.html') ;
       break;
     case 1:
-      window.open('PROJECTS/TYPEMASTER/Index.html') ;
+      window.open('PROJECTS/TYPEMASTER/home.html') ;
       break;
     case 2:
       window.open('PROJECTS/marvelous/home.html') ;
       break;
       case 3:
-      window.open('PROJECTS/TODO/Index.html') ;
+      window.open('PROJECTS/TODO/home.html') ;
       break;
     case 4:
       window.location.href = 'PROJECTS/p4/p4.html';
