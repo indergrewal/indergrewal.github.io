@@ -9,6 +9,9 @@ console.log("Number of sideButtons: " + sideButtons.length);
 
 // buttons //
 
+document.querySelector('.cr2').addEventListener('click', function() {
+  window.location.href = 'mailto:indergrewal1208.gi@gmail.com';
+});
 home.addEventListener('click', function() {
   window.location.href = 'index.html';
 });
@@ -17,6 +20,10 @@ pros.forEach(button=>{
   button.addEventListener('click', ()=>{
     loadProject(pros.indexOf(button))});
 });
+
+document.querySelector('.playStoreLink').addEventListener('click', function(){
+  window.open('https://play.google.com/store/apps/details?id=com.DetainList.INFINITESURVIVAL')
+})
 
 function loadProject(p) {
   switch (p) {
