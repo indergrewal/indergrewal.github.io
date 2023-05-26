@@ -109,7 +109,7 @@ document.addEventListener('keydown', function (e) {
         //animating=true;
         if(playAgain)
         {
-            window.location= 'index.html';
+            window.location= 'home.html';
         }
         if(gameOver)
         {

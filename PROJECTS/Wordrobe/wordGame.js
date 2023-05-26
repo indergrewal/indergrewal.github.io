@@ -232,7 +232,7 @@ function match(playerWord) {
 }
 
 document.querySelector('.replay').addEventListener('click', function () {
-    window.location = 'index.html';
+    window.location = 'home.html';
 });
 
 
