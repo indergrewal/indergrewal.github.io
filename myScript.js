@@ -39,20 +39,20 @@ function loadProject(p) {
     case 3:
       window.open('PROJECTS/GravitySim/home.html') ;
       break;
-    case 4:
+    case 5:
       window.open('PROJECTS/TODO/home.html') ;
       break;
-    case 5:
-      window.location.href = 'PROJECTS/data visualization/home.html';
-      break;
     case 6:
-      window.location.href = 'PROJECTS/p6/p6.html';
+      window.open('PROJECTS/data visualization/home.html');
+      break;
+    case 4:
+      // window.location.href = 'PROJECTS/p6/p6.html';
       break;
     case 7:
-      window.location.href = 'PROJECTS/p7/p7.html';
+      // window.location.href = 'PROJECTS/p7/p7.html';
       break;
     case 8:
-      window.location.href = 'PROJECTS/p8/p8.html';
+      // window.location.href = 'PROJECTS/p8/p8.html';
       break;
 
 

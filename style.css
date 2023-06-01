@@ -579,7 +579,8 @@ p {
     display: grid;
     width:max-content;
     height: 100%;
-    grid-template-columns: 300px 300px 300px 300px ;
+    grid-template-columns: 300px 300px 300px 300px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     padding: 8px;
     column-gap: 5px;
     row-gap: 5px;
@@ -591,6 +592,7 @@ p {
 }
 .projectElement{
     background-color:rgba(0, 0, 0, 0.5);
+    /* height: 300px; */
     height: 300px;
     z-index: 99;
     transition: .2s ;
@@ -651,8 +653,12 @@ p {
     transition: 0.2s;
     background-position-y:top;
 }
-
-
+.p7,.p8,.p9,.p10,.p11,.p12{
+    background-color: #00000000;
+}
+.p7:hover,.p8:hover,.p9:hover,.p10:hover,.p11:hover,.p12:hover{
+    cursor:default;
+}
 .p2txt{
     font-family: 'Abril Fatface' ;
     color: black;
