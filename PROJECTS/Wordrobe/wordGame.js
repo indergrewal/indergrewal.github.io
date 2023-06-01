@@ -7,8 +7,8 @@ let flowing = '';
 let five = false;
 let gameOver = false;
 let typingAllowed = true;
-const words = ["Bread", "Break", "Built", "Brush", "Begin", "Burst", "Belly", "Brave", "Brief", "Beach", "Click", "Clown", "Dance", "Diary", "Diver", "Dream", "Drive", "Draft", "Debit", "Ditch", "Flair", "Fleet", "Fable", "Faint", "Ghost", "Gloom", "Happy", "House", "Heart", "Hitch", "Joint", "Juice", "Jolly", "Known", "Karma", "Kites", "Light", "Laugh", "Lumen", "Ledge", "Magic", "Mount", "Mower"
-    , "nerve", "never", "needs", "noted", "night", "north", "nasty", "nurse", "newly", "noise", "Party", "Plant", "Point", "Power", "Place", "Phone", "Paint", "Pilot", "Ready", "Round", "Right", "Range", "Route", "Raise", "Rural", "Ratio", "Relax", "Start", "Sight", "Sound", "Story", "Study", "Shape", "Scale", "Catch", "Clean", "Clear", "Charm", "Chase", "Caper", "Crown", "apple", "baker", "candy", "joker", "daisy", "eager", "table", "gummy", "happy", "icing", "jolly", "known", "lemon", "mercy", "novel", "olive", "peace", "quest", "razor", "silky", "truck", "uncle", "vital", "watch", "xerox", "yield", "zebra", "mango", "spicy", "chaos", "braid", "elbow", "fudge", "grape", "hatch", "image", "jewel", "kitty", "laser", "mango", "noble", "ocean", "piano", "quilt", "rider", "salsa", "tiger", "uncut", "video", "waste", "peace", "smile", "happy", "money", "crazy", "house", "watch", "loved", "heart", "dream", "magic", "party", "honey", "music", "faith", "grace", "trust", "light", "laugh", "sweet", "beauty", "truth", "power", "charm", "proud", "brave", "bliss", "angel", "green", "fresh", "queen", "yacht", "crave"];
+const words = ["Bread", "Break", "Built", "Brush", "Begin", "Burst", "Belly", "Brave", "Brief", "Beach", "Click", "Clown", "Dance", "Diary", "Diver", "Dream", "Drive", "Draft", "Debit", "Ditch", "Flair", "Fleet", "Fable", "Faint", "Ghost", "Gloom", "Happy", "House", "Heart", "Hitch", "Joint", "Juice", "Jolly", "Known", "Karma", "Light", "Laugh", "Lumen", "Ledge", "Magic", "Mount", "Mower"
+    , "nerve", "never", "needs", "noted", "night", "north", "nasty", "nurse", "newly", "noise", "Party", "Plant", "Point", "Power", "Place", "Phone", "Paint", "Pilot", "Ready", "Round", "Right", "Range", "Route", "Raise", "Rural", "Ratio", "Relax", "Start", "Sight", "Sound", "Story", "Study", "Shape", "Scale", "Catch", "Clean", "Clear", "Charm", "Chase", "Caper", "Crown", "apple", "baker", "candy", "joker", "daisy", "eager", "table", "gummy", "happy", "icing", "jolly", "known", "lemon", "mercy", "novel", "olive", "peace", "quest", "razor", "silky", "truck", "uncle", "vital", "watch", "xerox", "yield", "zebra", "mango", "spicy", "chaos", "braid", "elbow", "fudge", "grape", "hatch", "image", "jewel", "kitty", "laser", "mango", "noble", "ocean", "piano", "quilt", "rider", "salsa", "tiger", "uncut", "video", "waste", "peace", "smile", "happy", "money", "crazy", "house", "watch", "loved", "heart", "dream", "magic", "party", "honey", "music", "faith", "grace", "trust", "light", "laugh", "sweet", "truth", "power", "charm", "proud", "brave", "bliss", "angel", "green", "fresh", "queen", "yacht", "crave"];
 let randomIndex = 0;
 while (!five) {
     randomIndex = Math.floor(Math.random() * words.length);
@@ -46,19 +46,19 @@ document.addEventListener('keydown', function (event) {
 
         }
         else if (event.key === 'Backspace') {
-            console.log("backspace pressed " + activeColumn);
+            // console.log("backspace pressed " + activeColumn);
             if (activeColumn > 1) {
                 --activeColumn;
                 --activeCell;
-                console.log("column  " + activeColumn);
+                // console.log("column  " + activeColumn);
                 document.getElementById(activeCell).textContent = '';
                 document.getElementById(activeCell).style.border = '2px solid rgb(130, 130, 130)';
                 flowing = flowing.slice(0, -1);
-                console.log("flowing " + flowing);
+                // console.log("flowing " + flowing);
             }
         }
         else if (event.key === 'Enter' && activeColumn === 6) {
-            console.warn("done");
+            // console.warn("done");
 
 
 
@@ -126,7 +126,7 @@ document.addEventListener('keydown', function (event) {
 });
 
 function match(playerWord) {
-    console.log("player word " + playerWord + " length " + playerWord.length);
+    // console.log("player word " + playerWord + " length " + playerWord.length);
     let wArr = '';
     let result = '';
     let currentWordTemp = currentWord;
@@ -135,17 +135,17 @@ function match(playerWord) {
     let wArrTemp = wArr;
     let wHas = [];
     wArr.forEach(letter => {
-        console.log("LETTER INDEX >>>>>>> " + wArr.indexOf(letter));
+        // console.log("LETTER INDEX >>>>>>> " + wArr.indexOf(letter));
         if (currentWordTemp.indexOf(letter) !== -1 && !occured[wArrTemp.indexOf(letter)]) {
             let indexTemp = currentWordTemp.indexOf(letter);
             if (currentWordTemp.indexOf(letter) === wArr.indexOf(letter)) {
-                console.log("BULLSEYE !!!!!!!");
+                // console.log("BULLSEYE !!!!!!!");
                 wHas[indexTemp] = 1;
                 // currentWordTemp[indexTemp]="x";
                 occured[wArr.indexOf(letter)] = true;
                 currentWordTemp = currentWordTemp.replace(currentWordTemp[indexTemp], '8');
                 wArrTemp[wArrTemp.indexOf(letter)] = '5';
-                console.error("current temp " + currentWordTemp + " replaced by " + currentWordTemp[indexTemp]);
+                // console.error("current temp " + currentWordTemp + " replaced by " + currentWordTemp[indexTemp]);
 
             }
 
@@ -158,11 +158,11 @@ function match(playerWord) {
 
             else {
 
-                console.error("at " + currentWordTemp.indexOf(letter));
+                // console.error("at " + currentWordTemp.indexOf(letter));
                 wHas[wArrTemp.indexOf(letter)] = 2;
 
                 if (currentWord[wArrTemp.indexOf(letter)] === letter) {
-                    console.error("c1 " + currentWord[wArrTemp.indexOf(letter)] === letter + " c2 :" + letter);
+                    // console.error("c1 " + currentWord[wArrTemp.indexOf(letter)] === letter + " c2 :" + letter);
                     wHas[wArrTemp.indexOf(letter)] = 1;
                 }
 
@@ -175,9 +175,9 @@ function match(playerWord) {
         }
         else {
             wHas[wArr.indexOf(letter)] = 0;
-            console.warn(" nope. " + currentWordTemp + " does not contain " + letter);
+            // console.warn(" nope. " + currentWordTemp + " does not contain " + letter);
         }
-        console.warn("COLOR CODES: " + wHas);
+        // console.warn("COLOR CODES: " + wHas);
     });
     for (let i = 0; i < 5; i++) {
         let pass = '';
@@ -226,7 +226,7 @@ function match(playerWord) {
     result = wHas.join('');
     if (result == '11111') {
         gameOver = true;
-        console.log("GAME DONE!!!!!!!!");
+        // console.log("GAME DONE!!!!!!!!");
     }
 
 }
