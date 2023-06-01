@@ -1,0 +1,63 @@
+.ball {
+    z-index: 100;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+  }
+  body{
+    cursor:auto;
+      position: relative;
+      background-color: #1d1d1d;
+      overflow-y: hidden;
+  }
+.gConstant{
+  position: absolute;
+  z-index: 1;
+  top:50vh;
+  left: 50%;
+}
+.gText{
+  font-size: 15rem;
+  color: #ffffff1f;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .btn {
+    height: 50px;
+    flex: 1;
+    background-color: #1d1d1d;
+    border:1px solid whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+    margin: 5px;
+    font-weight: 700;
+
+}
+
+.btn.selected {
+   /* background-color: whitesmoke; */
+   color: #1d1d1d;
+   border: 1px solid #1d1d1d;
+}
+
+.message{
+    padding-top:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+.txt{
+    font-size: 1.1rem;
+    color: rgb(238, 238, 238);
+    font-weight: 700;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="stylePie.css" type="text/css">
+
+</head>
+
+<body>
+
+
+    <div class="workArea">
+
+    <div class="left">
+        <table class="dataTable" >
+            <tr>
+                <td><input type="text" class="nameX" id="thingHeader" value="Food Item"></td>
+                <td><input type="text" class="nameY" id="valueHeader" value="Units Sold"></td>
+
+            </tr>
+            <tr>
+                <td><input type="text" class="itemName" id="i1" value="Tea"></td>
+                <td><input type="number" class="valueNumber" id="v1" value="45"></td>
+                <td><button class="deleteButton" onclick="deleteRow(this)">X</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="itemName" id="i2" value="Coffee"></td>
+                <td><input type="number" class="valueNumber" id="v2" value="78"></td>
+                <td><button class="deleteButton" onclick="deleteRow(this)">X</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="itemName" id="i3" value="Juice"></td>
+                <td><input type="number" class="valueNumber" id="v3" value="40"></td>
+                <td><button class="deleteButton" onclick="deleteRow(this)">X</button></td>
+
+            </tr>
+            <tr>
+                <td><input type="text" class="itemName" id="i4" value="Chocolate"></td>
+                <td><input type="number" class="valueNumber" id="v4" value="57"></td>
+                <td><button class="deleteButton" onclick="deleteRow(this)">X</button></td>
+
+            </tr>
+            <tr>
+                <td><input type="text" class="itemName" id="i5" value="Shake"></td>
+                <td><input type="number" class="valueNumber" id="v5" value="34"></td>
+                <td><button class="deleteButton" onclick="deleteRow(this)">X</button></td>
+
+            </tr>
+        </table>
+        <button class="addNew">+Add Row</button>
+        <button class="visualize">Visualize</button>
+    </div>
+
+    <div class="right">
+        <div class="q" id="q1">
+
+            <div class="container">
+                <div class="header cChild">Bar Graph and Pie Chart</div>
+                <div class="middle cChild">
+                    <div class="labelBoxY mChild">
+                        <div class="labelY">Units Sold</div>
+                        </div>
+                    <div class="readingBox mChild">
+                        <div class="rChild scale">100</div>
+                        <div class="rChild scale">80</div>
+                        <div class="rChild scale">60</div>
+                        <div class="rChild scale">40</div>
+                        <div class="rChild scale">20</div>
+                        <div class="rChild">0</div>
+                    </div>
+                    <div class="mappingArea mChild">
+                        <div class="bar" id="bar1"></div>
+                        <div class="bar" id="bar2"></div>
+                        <div class="bar" id="bar3"></div>
+                        <div class="bar" id="bar4"></div>
+                        <div class="bar" id="bar5"></div>
+
+
+
+                    </div>
+                </div>
+                <div class="footer cChild">
+                    <div class="empty fChild"></div>
+                    <div class="namingBox fChild">
+                        <div class="names nChild">
+                            <div class="barName">Tea</div>
+                            <div class="barName">Coffee</div>
+                            <div class="barName">Juice</div>
+                            <div class="barName">Chocolate</div>
+                            <div class="barName">Shake</div>
+
+                        </div>
+                        <div class="labelX nChild">Food Item</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+<div class="q" id="q2">
+    <div class="pie">
+        <canvas class="canvas" width="400" height="400"></canvas>
+    </div>
+
+    <div class="legend">
+    </div>
+</div>
+    </div>
+
+
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

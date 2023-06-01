@@ -106,7 +106,7 @@ transition: 0.5s ease-in-out;
 }
 ::-webkit-scrollbar {
     display: none;
-  }
+}
 
 
 .SL{
@@ -316,7 +316,7 @@ transition: 0.5s ease-in-out;
     width: 70%;
     object-fit: cover;
     padding-left: 80px;
-    padding-top: 260px;
+    padding-top: 230px;
 }
 .cr2 {
     display: grid;
@@ -352,7 +352,7 @@ transition: 0.2s;
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 .frontText{
 }
@@ -585,7 +585,8 @@ p {
     row-gap: 5px;
     /* border: 2px solid #08fdd8;
     border-top-width: 5px; */
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     align-items: center;
 }
 .projectElement{
@@ -634,6 +635,24 @@ p {
     background-position-y:top;
 }
 
+.p5{
+    background-image: url("solar.png");
+    background-size:135%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: 0.2s;
+    background-position-y:top;
+}
+.p6{
+    background-image: url("graphIcon.JPG");
+    background-size:150%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: 0.2s;
+    background-position-y:top;
+}
+
+
 .p2txt{
     font-family: 'Abril Fatface' ;
     color: black;
@@ -662,7 +681,12 @@ p {
 .p4:hover{
      background-size:100%;
 }
-
+.p5:hover{
+    background-size:100%;
+}
+.p6:hover{
+    background-size:100%;
+}
 .projectElement:hover{
 
     cursor: pointer;

@@ -36,14 +36,14 @@ function loadProject(p) {
     case 2:
       window.open('PROJECTS/marvelous/home.html') ;
       break;
-      case 3:
-      window.open('PROJECTS/TODO/home.html') ;
+    case 3:
+      window.open('PROJECTS/GravitySim/home.html') ;
       break;
     case 4:
-      window.location.href = 'PROJECTS/p4/p4.html';
+      window.open('PROJECTS/TODO/home.html') ;
       break;
     case 5:
-      window.location.href = 'PROJECTS/p5/p5.html';
+      window.location.href = 'PROJECTS/data visualization/home.html';
       break;
     case 6:
       window.location.href = 'PROJECTS/p6/p6.html';

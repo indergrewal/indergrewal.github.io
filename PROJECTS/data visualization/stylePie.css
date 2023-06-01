@@ -1,0 +1,52 @@
+#q2{
+    /* background-color: rgb(255, 127, 127); */
+    display: flex;
+    flex-direction: row;
+
+}
+.canvas{
+    /* background-color: aqua; */
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.pie{
+    /* background-color:blue; */
+    position: relative;
+    flex: 2;
+}
+.legend{
+    /* background-color: blueviolet; */
+    flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    /* padding-top: 20px; */
+    font-weight: 700;
+}
+.lChild{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.colorBlock{
+    width: 10%;
+    height: 100%;
+    background-color: crimson;
+    border-radius: 2px;
+}
+.nameBlock{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
