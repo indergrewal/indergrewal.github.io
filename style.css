@@ -88,13 +88,6 @@ background-color: #2d2d2d;
 transition: 0.5s ease-in-out;
 }
 
-.navChildFooter{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
 .logo{
     text-align: center;
     vertical-align: middle;
@@ -282,17 +275,17 @@ transition: 0.5s ease-in-out;
 }
 
 #html .level::before{
-    width: 90%;
+    width: 98%;
     background-color: #EE1D52;
 }
 
 #css .level::before{
-    width: 85%;
+    width: 95%;
     background-color: #08fdd8;
 }
 
 #js .level::before{
-    width: 95%;
+    width: 99%;
     background-color: #fd08f9;
 }
 #c .level::before{
@@ -308,7 +301,7 @@ transition: 0.5s ease-in-out;
     background-color: #fd08f9;
 }
 #b3d .level::before{
-    width: 78%;
+    width: 98%;
     background-color: #08fdd8;
 }
 
