@@ -22,9 +22,12 @@ pros.forEach(button => {
   });
 });
 
-document.querySelector('.playStoreLink').addEventListener('click', function () {
-  window.open('https://play.google.com/store/apps/details?id=com.DetainList.INFINITESURVIVAL')
-})
+const playStoreLink = document.querySelector('.playStoreLink');
+if (playStoreLink) {
+  playStoreLink.addEventListener('click', function () {
+    window.open('https://play.google.com/store/apps/details?id=com.DetainList.INFINITESURVIVAL');
+  });
+}
 
 function loadProject(p) {
   switch (p) {
