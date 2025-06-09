@@ -399,16 +399,6 @@ p {
     margin-bottom: 10px;
 }
 
-.playStoreLink{
-    color: #fd08f9;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.playStoreLink:hover{
-    color: #EE1D52;
-    cursor: pointer;
-}
 
 .skillsHeading{
     font-family: 'Libre Baskerville', serif;
